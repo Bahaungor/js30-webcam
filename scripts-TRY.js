@@ -22,4 +22,19 @@ function videoToCanvas(){
     },10);
 }
 
+function takePhoto(){
+    //play sound
+    snapSound.currentTime = 0;
+    snapSound.play();
+
+    //take photo
+    const ImageUrl = canvas.toDataURL("image/jpeg");
+    const imageLink = document.createElement("a");
+    imageLink.href = imageLink;
+    imageLink.setAttribute("download", "handsome");
+    strip.appendChild(imageLink);
+}
+
 getVideo();
+
+video.addEventListener("canplay", videoToCanvas);
