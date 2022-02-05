@@ -32,8 +32,8 @@ function takePhoto(){
     const imageLink = document.createElement("a");
     imageLink.href = imageData;
     imageLink.setAttribute("download", "handsome");
-    imageLink.innerHTML = `<img src="${imageData}" alt="Handsome Man"></img>`;
-    strip.insertBefore(link, strip.firstChild);
+    imageLink.innerHTML = `<img src="${imageData}" alt="Handsome Man"/>`;
+    strip.insertBefore(imageLink, strip.firstChild);
 }
 
 getVideo();
