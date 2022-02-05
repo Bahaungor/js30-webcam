@@ -18,6 +18,6 @@ function videoToCanvas(){
     ctx.drawImage(video, 0, 0);
 }
 
-setInterval(videoToCanvas,1000);
+setInterval(videoToCanvas,3000);
 
 getVideo();
