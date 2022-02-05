@@ -14,9 +14,11 @@ function getVideo(){
 }
 
 function videoToCanvas(){
-    [canvas.width, canvas.height] = [video.videoWidth, video.videoHeight];
+    const width = video.videoWidth;
+    const height = video.videoHeight;
+    [width, height] = [video.videoWidth, video.videoHeight];
     setInterval(() => {
-        ctx.drawImage(video, 0, 0);
+        ctx.drawImage(video, 0, 0, width, height);
     },10);
 }
 
