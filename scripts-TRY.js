@@ -32,6 +32,7 @@ function takePhoto(){
     const imageLink = document.createElement("a");
     imageLink.href = imageData;
     imageLink.setAttribute("download", "handsome");
+    imageLink.textContent = "Download Image";
     strip.appendChild(imageLink);
 }
 
