@@ -13,9 +13,9 @@ function getVideo(){
         .catch(err => console.log("Cannot get video due to: ",err));
 }
 
-function paintToCanvas(){
-    [video.width, video.height] = [canvas.width, canvas.height];
-    ctx.drawImage(video);
+function videoToCanvas(){
+    //[video.videoWidth, video.videoHeight] = [canvas.width, canvas.height];
+    ctx.drawImage(video, 0, 0);
 }
 
 
