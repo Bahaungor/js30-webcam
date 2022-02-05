@@ -29,10 +29,10 @@ function takePhoto(){
 
     //take photo
     const imageData = canvas.toDataURL("image/jpeg");
-    const imageLink = document.createElement("img");
+    const imageLink = document.createElement("a");
     imageLink.href = imageData;
     imageLink.setAttribute("download", "handsome");
-    imageLink.src = imageData;
+    imageLink.innerHTML = `<img src="${imageData}" alt="Handsome Man"></img>`;
     strip.insertBefore(link, strip.firstChild);
 }
 
