@@ -7,8 +7,8 @@ const snapSound = document.querySelector('.snap');
 function getVideo(){
     navigator.mediaDevices.getUserMedia({video:true, audio: false})
         .then(localMediaStream => {
-            strip.srcObject = localMediaStream;
-            strip.play();
+            canvas.srcObject = localMediaStream;
+            canvas.play();
         })
 }
 
