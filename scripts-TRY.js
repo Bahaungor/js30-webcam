@@ -19,6 +19,8 @@ function videoToCanvas(){
     [canvas.width, canvas.height] = [width,height];
     setInterval(() => {
         ctx.drawImage(video, 0, 0, width, height);
+        const pixels = ctx.getImageData();
+        console.log(pixels);
     },10);
 }
 
