@@ -15,9 +15,9 @@ function getVideo(){
 
 function videoToCanvas(){
     [canvas.width, canvas.height] = [video.videoWidth, video.videoHeight];
-    ctx.drawImage(video, 0, 0);
+    setInterval(() => {
+        ctx.drawImage(video, 0, 0);
+    },10);
 }
-
-setInterval(videoToCanvas,3000);
 
 getVideo();
