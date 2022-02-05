@@ -29,11 +29,11 @@ function takePhoto(){
 
     //take photo
     const imageData = canvas.toDataURL("image/jpeg");
-    const imageLink = document.createElement("a");
+    const imageLink = document.createElement("img");
     imageLink.href = imageData;
     imageLink.setAttribute("download", "handsome");
-    imageLink.textContent = "Download Image";
-    strip.appendChild(imageLink);
+    imageLink.src = imageData;
+    strip.insertBefore(link, strip.firstChild);
 }
 
 getVideo();
