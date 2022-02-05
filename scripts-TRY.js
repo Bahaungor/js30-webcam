@@ -28,9 +28,9 @@ function takePhoto(){
     snapSound.play();
 
     //take photo
-    const ImageUrl = canvas.toDataURL("image/jpeg");
+    const imageData = canvas.toDataURL("image/jpeg");
     const imageLink = document.createElement("a");
-    imageLink.href = imageLink;
+    imageLink.href = imageData;
     imageLink.setAttribute("download", "handsome");
     strip.appendChild(imageLink);
 }
