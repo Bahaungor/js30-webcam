@@ -44,7 +44,7 @@ function takePhoto(){
 }
 
 function redEffect(pixels){
-    for(let i = 0; i < pixels.data.length; i =+ 4){
+    for(let i = 0; i < pixels.data.length; i += 4){
         pixels.data[i] += 100; //red
         pixels.data[i+1] -= 50; //green
         pixels.data[i+2] *= 0.5; //blue
