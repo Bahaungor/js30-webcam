@@ -14,7 +14,7 @@ function getVideo(){
 }
 
 function videoToCanvas(){
-    //[video.videoWidth, video.videoHeight] = [canvas.width, canvas.height];
+    [video.videoWidth, video.videoHeight] = [canvas.width, canvas.height];
     ctx.drawImage(video, 0, 0);
 }
 
